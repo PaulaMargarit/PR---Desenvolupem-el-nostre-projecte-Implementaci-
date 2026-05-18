@@ -1,0 +1,766 @@
+/*Font del document*/
+html{
+    font-family: 'Outfit', sans-serif;
+}
+
+/*Marges i padding a 0*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*HEADER*/
+header{
+    background-color: #6367FF;
+}
+
+main{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-header{
+    display: flex;
+    justify-content: space-between;
+    padding:24px;
+    align-items: center;
+    font-size: 16px;
+}
+
+.logo{
+    display: flex;
+    height: 44px;
+    width: auto;
+    object-fit: contain;
+}
+
+.logo img{
+    border-radius: 8px;
+}
+
+.menu-superior{
+    list-style: none;
+    display: flex;
+    gap: 24px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.button_header{
+    padding: 12px 24px;
+    border-radius: 8px;
+    background-color: #F1EEFF;
+    color: #6367FF;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid transparent;
+}
+
+.button_header:hover{
+    background-color: #6367FF;
+    border: 2px solid #F1EEFF;
+    color: #F1EEFF;
+}
+
+.button_header2{
+    padding: 12px 24px;
+    border-radius: 8px;
+    background-color: #6367FF;
+    border: 2px solid #F1EEFF;
+    color: #F1EEFF;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none; 
+}
+
+.button_header2:hover{
+    background-color: #F1EEFF;
+    color: #6367FF;
+}
+
+.gran-header{
+    padding-top: 40px ;
+    padding-bottom: 40px;
+    text-align: center;
+    color: #F1EEFF;
+    background-image: url(../data/Imatge_fons.jpg);
+    background-size: cover;
+}
+
+.inner_text{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+}
+
+.inner_text h1{
+    font-size: 72px;
+}
+
+.inner_text p{
+    font-size: 22px;
+}
+
+.article1_index{
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 64px 80px;
+    background-color: #F1EEFF;
+    align-items: center; 
+    color: #6367FF;
+}
+
+.article1_index h2{
+    color: #6367FF;
+    margin-bottom: 24px;
+}
+
+.article1_index img{
+    width: 60%;
+    height: auto;
+}
+
+.article2_index{
+    padding: 64px 80px;
+    background-color: #6367FF;
+}
+
+.article2_index h2{
+    color: #F1EEFF;
+    margin-bottom: 24px;
+}
+
+.imatges_eines{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.imatges_eines img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*Footer*/
+footer{
+    padding: 64px 80px;
+    background-color: #F1EEFF;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.footer1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/*Inicia la sessió*/
+.article_registre{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 24px;
+}
+
+.rectangle{
+    width: 100%;
+    height: 650px;
+    border-radius: 8px;
+    background: #6367FF
+                url(../data/Registre.png);
+
+    background-size: cover;
+    background-position: center;      
+}
+
+.article_registre h2,
+.article_registre h3,
+.article_registre p {
+    color: #6367FF;
+}
+
+.text_registre{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.registre_sobre{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.text_registre p{
+    font-size: 14px;
+}
+
+.button_registre {
+    width: 100%;
+    padding: 8px;
+}
+
+.formulariRegistre{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    color: #6367FF;
+}
+
+.text_formulari{
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+}
+
+.formulariRegistre input{
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    outline-color: #6367FF;
+    border: 1px solid #6367FF;
+}
+
+.button_registre{
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid #6367FF;
+    background-color: #6367FF;
+    color: #F1EEFF;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button_registre:hover, .button_registre:active{
+    border: 2px solid #6367FF;
+    background-color: #F1EEFF;
+    color: #6367FF;
+}
+
+
+/*Gestió grups*/
+main{
+    flex: 1;
+}
+
+.body_aplicacio{
+    background-color: #6367FF;
+    display: flex;
+    min-height: 100vh;
+}
+
+.article_gestio{
+    margin: 24px;
+    background-color: white;
+    padding: 24px;
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    min-height: calc(100vh - 48px);
+}
+
+.article_gestio h2{
+    color: #6367FF;
+}
+
+.button_titol{
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: 2px solid #6367FF;
+    background-color: #6367FF;
+    color: #F1EEFF;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none; 
+}
+
+.button_titol:hover{
+    background-color: #F1EEFF;
+    color: #6367FF;
+}
+
+.titols{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #6367FF;
+}
+
+.gestio_cartes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+}
+
+.gestio_component{
+    /*Afegeix una capa translúcida sobre la imatge de fons*/
+    background-image: 
+        linear-gradient(rgba(241,238,255,0.7), rgba(241,238,255,0.7)),
+        var(--imatge);
+    background-size: cover;
+    height: 250px;
+    padding: 24px;
+    border-radius: 8px;
+    color: #6367FF;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.carta_títol{
+    display: flex;
+    justify-content: space-between;
+}
+
+.boto_component{
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: 2px solid #6367FF;
+    background-color: #6367FF;
+    color: #F1EEFF;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none; 
+}
+
+.boto_component:hover{
+    background-color: #F1EEFF;
+    color: #6367FF;
+    border: 2px solid #F1EEFF;
+}
+
+
+/*Sidebar*/
+.sidebar{
+    background-color:#6367FF;
+    width: max-content;
+    border-radius: 8px;
+    padding: 24px;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}
+
+/*Expandeix el menú lateral en passar el ratolí*/
+.sidebar:hover .sidebar_element{
+    grid-template-columns: 40px 1fr;
+}
+
+.sidebar_list{
+   list-style: none;
+   padding: 0px;
+
+   display: flex;
+   flex-direction: column;
+   gap: 18px;
+   height: 100%;
+}
+
+.sidebar_element{
+    padding: 8px;
+    border-radius: 8px;
+
+    display: grid;
+    align-items: center;
+    grid-template-columns: 40px 0fr;
+    color: #F1EEFF;
+
+    text-decoration: none;
+    transition: grid-template-columns .4s;
+}
+
+.sidebar_hide{
+    overflow: hidden;
+}
+
+/*quan passa per sbre del logo no es pinta el fons*/
+.sidebar_element:not(:has(.sidebar_icon--logo)):hover{
+    background-color: #8494FF;
+    cursor: pointer;
+}
+
+.sidebar_element:has(.sidebar_icon--logo){
+    margin-bottom: 16px;
+}
+
+.sidebar_icon{
+    width: 16px;
+    height: 16px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+.sidebar_icon--logo{
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+}
+
+.sidebar_icon_text{
+   height: 36px;
+   width: auto;
+   display: block;
+}
+
+.sidebar_logo, .sidebar_text{
+    padding-left: 8px;
+}
+
+.sidebar_bottom{
+    margin-top: auto;
+}
+
+.sidebar_title{
+    text-wrap: nowrap;
+}
+
+
+/*Inici grup*/
+.article_inici{
+    margin: 24px 24px 0px 0px;
+    background-color: #F1EEFF;
+    padding: 24px;
+    border-radius: 8px 8px 0px 0px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+
+}
+
+.inici_descripcio{
+    color: #6367FF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.inici_imatge{
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.article_participants{
+    flex: 1;
+
+    margin: 0 24px 24px 0;
+    padding: 24px;
+    border-radius: 0px 0px 8px 8px;
+
+    background-color: white;
+
+    display: flex;
+    gap: 24px;
+}
+
+.article_participants_content{
+    background-color: #F1EEFF;
+    border-radius: 8px;
+    padding: 24px;
+    color: #6367FF;
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    width: 100%;
+}
+
+.total_participants{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.participant{
+    display: flex;
+    padding: 24px;
+    background-color: #6367FF;
+    color: #F1EEFF;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.participant_esquerra{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.participant img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+/*Fòrum*/
+.article_forum{
+    margin: 24px 24px 24px 0px;
+    background-color: white;
+    padding: 24px;
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    min-height: calc(100vh - 48px);
+}
+
+.total_forum{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.carta_forums{
+    background-color: #F1EEFF;
+    padding: 24px;
+    display: flex;
+    gap: 24px;
+    color: #6367FF;
+    border-radius: 8px;
+}
+
+.carta_forums img{
+    width: 20%;
+    object-fit: cover;
+}
+
+.forum_contingut{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+}
+
+.forum_nom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.forum_imatge{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.forum_imatge img{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.forum_iconos{
+    display: flex;
+    gap: 24px;
+}
+
+.forum_icon{
+    display: flex;
+    gap: 8px;
+}
+
+
+/*Votacions*/
+.total_votacions{
+    display: flex;
+    gap: 24px;
+}
+
+.votacions_card{
+    background-color: #F1EEFF;
+    padding: 24px;
+    color: #6367FF;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+}
+
+.total_respostes{
+    display: flex;
+    gap: 24px;
+}
+
+.votacions_resposta{
+    background-color: white;
+    padding: 24px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    width: 100%;
+}
+
+/*Canvia l’aspecte de la resposta seleccionada*/
+.votacions_resposta.activa{
+    background-color: #C9BEFF;
+    color: #F1EEFF;
+}
+
+/*Diners*/
+.article_diners{
+    margin: 24px 24px 0px 0px;
+    background-color: #F1EEFF;
+    padding: 24px;
+    border-radius: 8px 8px 0px 0px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    color: #6367FF;
+}
+
+.diners_persona{
+    background-color: #6367FF;
+    padding: 24px;
+    border-radius: 8px;
+    color: #F1EEFF;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*Personal*/
+.article_persona{
+    margin: 24px 24px 0px 0px;
+    background-color: #F1EEFF;
+    padding: 24px;
+    border-radius: 8px 8px 0px 0px;
+
+    display: flex;
+    gap: 24px;
+    color: #6367FF;
+}
+.article_persona img{
+    width: 20%;
+    object-fit: cover;
+}
+
+.personal_items{
+    display: flex;
+    gap: 8px;
+}
+
+.personal_seguidors{
+    display: flex;
+    gap: 24px;
+}
+
+.seguidors_card{
+    background-color: white;
+    padding: 24px;
+    border-radius: 8px;
+    text-align: center;
+    width: 100%;
+}
+
+.total_icones{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.personal_icones{
+    color: #6367FF;
+    display: flex;
+    gap: 8px;
+}
+
+
+/*Calendari*/
+.calendari_contingut{
+    display: flex;
+    gap: 24px;
+}
+
+.calendari_esquerra{
+    background-color: #F1EEFF;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    color: #6367FF;
+    border-radius: 8px;
+}
+
+.calendari_dret{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    color: #6367FF;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.calendari_data{
+    background-color: #F1EEFF;
+    padding: 24px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.calendari_setmana{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Graella dels dies del calendari*/
+.calendari_total_dies{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 16px;
+}
+
+.calendari_dies{
+    background-color: #F1EEFF;
+    border-radius: 8px;
+    padding: 16px;
+
+    min-height: 100px;
+
+    display: flex;
+    justify-content: flex-end;
+
+    cursor: pointer;
+    transition: .3s;
+}
+
+.calendari_dies:hover{
+    background-color: #dfe3ff;
+}
