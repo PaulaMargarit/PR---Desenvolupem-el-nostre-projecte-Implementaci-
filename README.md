@@ -1,1 +1,1 @@
-# PR---Desenvolupem-el-nostre-projecte-Implementaci-
+# PR. Desenvolupem el nostre projecte. Implementació
