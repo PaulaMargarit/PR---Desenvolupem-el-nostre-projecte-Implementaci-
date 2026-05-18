@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ca">
+    <!--Establim el tipus de document, i els enllaços cap al full d'estil CSS i  JS-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="icon" href="../data/Icona_logo.jpg">
+        <title>Perfil</title>
+    </head>
+    <body class="body_aplicacio">
+        <!--Menú lateral-->
+        <aside class="sidebar">
+            <ul class="sidebar_list">
+                <!--Logo-->
+                <li class="sidebar_element">
+                    <img src="../data/Icona_logo.jpg" class="sidebar_icon sidebar_icon--logo">
+                    
+                    <div class="sidebar_hide">
+                        <img src="../data/Icona.png" class="sidebar_icon_text">
+                    </div>
+                </li>
+                <!--Botó home-->
+                <li>
+                    <a href="../html/inici_grup.html" class="sidebar_element"> 
+                        <i class="fa-solid fa-house"></i>
+                        
+                        <div class="sidebar_hide">
+                            <p class="sidebar_text">Home</p>
+                        </div>
+                    </a>
+                </li>
+                <!--Botó Fòrum-->
+                <li>
+                    <a href="../html/forum.html" class="sidebar_element">
+                        <i class="fa-regular fa-message"></i>
+                        
+                        <div class="sidebar_hide">
+                            <p class="sidebar_text">Fòrum</p>
+                        </div>
+                    </a>
+                </li>
+                <!--Botó Calendari-->
+                <li>
+                    <a href="../html/calendari.html" class="sidebar_element">
+                        <i class="fa-regular fa-calendar"></i>
+                        
+                        <div class="sidebar_hide">
+                            <p class="sidebar_text">Calendari</p>
+                        </div>
+                    </a>
+                </li>
+                <!--Botó Votacions-->
+                <li>
+                    <a href="../html/votacions.html" class="sidebar_element">
+                        <i class="fa-regular fa-square-check"></i>
+                        
+                        <div class="sidebar_hide">
+                            <p class="sidebar_text">Votacions</p>
+                        </div>
+                    </a>
+                </li>
+                <!--Botó Diners-->
+                <li>
+                    <a href="../html/diners.html" class="sidebar_element">
+                        <i class="fa-regular fa-dollar-sign"></i>
+                        
+                        <div class="sidebar_hide">
+                            <p class="sidebar_text">Diners</p>
+                        </div>
+                    </a>
+                </li>
+                <!--Botó Configuració-->
+                <li class="sidebar_bottom">
+                    <a href="../html/gestio_grups.html" class="sidebar_element">
+                        <i class="fa-solid fa-gear"></i>
+
+                        <div class="sidebar_hide">
+                            <p class="sidebar_title">Configuració</p>
+                        </div>
+                    </a>
+                </li>
+                <!--Botó Perfil-->
+                <li>
+                    <a href="../html/personal.html" class="sidebar_element">
+                        <i class="fa-regular fa-user"></i>
+
+                        <div class="sidebar_hide">
+                            <p class="sidebar_title">Paula Margarit</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <main>
+            <!--Primer article-->
+            <article class="article_persona">
+                <!--Imatge-->
+                <img src="../data/Perfil.jpg" alt="Imatge noia">
+                <div class="forum_contingut">
+                    <!--Nom i botó per seguir-->
+                    <div class="forum_nom">
+                        <h2>Paula Margarit</h2>
+                        <a class="button_titol">Seguir</a>
+                    </div>
+                    <!--Edat-->
+                    <div class="personal_items">
+                        <i class="fa-regular fa-user"></i>
+                        <p>22 anys</p>
+                    </div>
+                    <!--On viu-->
+                    <div class="personal_items">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Olesa de Montserrat</p>
+                    </div>
+                    <!--Grups, seguidors i seguits-->
+                    <div class="personal_seguidors">
+                        <div class="seguidors_card">
+                            <h3>4</h3>
+                            <p>Grups</p>
+                        </div>
+                        <div class="seguidors_card">
+                            <h3>20</h3>
+                            <p>Seguidors</p>
+                        </div>
+                        <div class="seguidors_card"> 
+                            <h3>18</h3>
+                            <p>Seguits</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <!--Segon article-->
+            <article class="article_participants">
+                <!--Columna esquerra: descripció-->
+                <div class="article_participants_content">
+                    <div class="titols">
+                        <h2>Descripció</h2>
+                    </div>
+                    <p>M’agrada organitzar plans, descobrir nous llocs i aprofitar qualsevol oportunitat per fer una escapada amb els amics. Sempre intento trobar activitats diferents per compartir bons moments en grup.</p>
+                </div>
+                <!--Columna central: Interessos-->
+                <div class="article_participants_content">
+                    <h2>Interessos</h2>
+                    <div class="total_icones">
+                        <div class="personal_icones">
+                            <i class="fa-solid fa-basketball"></i>
+                            <p>Futbol</p>
+                        </div>
+                        <div class="personal_icones">
+                            <i class="fa-solid fa-dog"></i>
+                            <p>Gossos</p>
+                        </div>
+                        <div class="personal_icones">
+                            <i class="fa-solid fa-mountain"></i>
+                            <p>Montanya</p>
+                        </div>
+                        <div class="personal_icones">
+                            <i class="fa-solid fa-microchip"></i>
+                            <p>Disseny</p>
+                        </div>
+                        <div class="personal_icones">
+                            <i class="fa-solid fa-burger"></i>
+                            <p>Hamburguesa</p>
+                        </div>
+                    </div>
+                </div>
+                <!--Columna dreta: Xarxes socials-->
+                <div class="article_participants_content">
+                    <h2>Xarxes Socials</h2>
+                    <div class="total_icones">
+                        <div class="personal_icones">
+                            <i class="fa-brands fa-instagram"></i>
+                            <p>Instagram</p>
+                        </div>
+                        <div class="personal_icones">
+                            <i class="fa-brands fa-square-facebook"></i>
+                            <p>Facebook</p>
+                        </div>
+                        <div class="personal_icones">
+                            <i class="fa-brands fa-linkedin"></i>
+                            <p>Linkedin</p>
+                        </div>
+                        <div class="personal_icones">
+                            <i class="fa-solid fa-envelope"></i>
+                            <p>Email</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </main>
+    </body>
+</html>

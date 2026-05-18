@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ca">
+    <!--Establim el tipus de document, i els enllaços cap al full d'estil CSS i  JS-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="icon" href="../data/Icona_logo.jpg">
+        <title>Registre</title>
+    </head>
+    <body>
+        <main>
+            <!--Article principal-->
+            <article class="article_registre">
+                <!--Rectangle esquerra-->
+                <div class="rectangle"></div>
+                <!--Part dreta-->
+                <div class="text_registre">
+                    <!--Títol-->
+                    <div class="registre_sobre">
+                        <h2>Inicia la sessió</h2>
+                        <p>Accedeix als teus grups i continua organitzant plans.</p>
+                    </div>
+                    <!--Formulari-->
+                    <form class="formulariRegistre">
+                        <div class="text_formulari">
+                            <label for="correuElectronic"><strong>Email:</strong></label>
+                            <!--Espai que et permet escriure el teu nom-->
+                            <input type="email" id="correuElectronic" name="correuElectronic" required/>
+                        </div>
+                        <div  class="text_formulari">
+                            <label for="contrasenya"><strong>Contrasenya:</strong></label>
+                            <!--Espai que et permet escriure la teva contrasenya-->
+                            <input type="password" id="contrasenya" name="contrasenya" required/>
+                        </div>
+                    </form>
+                    <!--Botó per iniciar sessió-->
+                    <a href="gestio_grups.html" class="button_registre">Inicia sessió</a>
+                    <p>No tens compte? <strong>Registra't</strong></p>
+                </div>
+            </article>
+        </main>
+    </body>
+</html>   

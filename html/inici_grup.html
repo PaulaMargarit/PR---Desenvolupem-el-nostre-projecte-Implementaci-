@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ca">
+    <!--Establim el tipus de document, i els enllaços cap al full d'estil CSS i  JS-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="icon" href="../data/Icona_logo.jpg">
+        <title>Grup</title>
+    </head>
+    <body class="body_aplicacio">
+        <!--Menú lateral-->
+        <aside class="sidebar">
+            <ul class="sidebar_list">
+                <!--Logo-->
+                <li class="sidebar_element">
+                    <img src="../data/Icona_logo.jpg" class="sidebar_icon sidebar_icon--logo">
+                    
+                    <div class="sidebar_hide">
+                        <img src="../data/Icona.png" class="sidebar_icon_text">
+                    </div>
+                </li>
+                <!--Botó home-->
+                <li>
+                    <a href="../html/inici_grup.html" class="sidebar_element"> 
+                        <i class="fa-solid fa-house"></i>
+                        
+                        <div class="sidebar_hide">
+                            <p class="sidebar_text">Home</p>
+                        </div>
+                    </a>
+                </li>
+                <!--Botó Fòrum-->
+                <li>
+                    <a href="../html/forum.html" class="sidebar_element">
+                        <i class="fa-regular fa-message"></i>
+                        
+                        <div class="sidebar_hide">
+                            <p class="sidebar_text">Fòrum</p>
+                        </div>
+                    </a>
+                </li>
+                <!--Botó Calendari-->
+                <li>
+                    <a href="../html/calendari.html" class="sidebar_element">
+                        <i class="fa-regular fa-calendar"></i>
+                        
+                        <div class="sidebar_hide">
+                            <p class="sidebar_text">Calendari</p>
+                        </div>
+                    </a>
+                </li>
+                <!--Botó Votacions-->
+                <li>
+                    <a href="../html/votacions.html" class="sidebar_element">
+                        <i class="fa-regular fa-square-check"></i>
+                        
+                        <div class="sidebar_hide">
+                            <p class="sidebar_text">Votacions</p>
+                        </div>
+                    </a>
+                </li>
+                <!--Botó Diners-->
+                <li>
+                    <a href="../html/diners.html" class="sidebar_element">
+                        <i class="fa-regular fa-dollar-sign"></i>
+                        
+                        <div class="sidebar_hide">
+                            <p class="sidebar_text">Diners</p>
+                        </div>
+                    </a>
+                </li>
+                <!--Botó Configuració-->
+                <li class="sidebar_bottom">
+                    <a href="../html/gestio_grups.html" class="sidebar_element">
+                        <i class="fa-solid fa-gear"></i>
+
+                        <div class="sidebar_hide">
+                            <p class="sidebar_title">Configuració</p>
+                        </div>
+                    </a>
+                </li>
+                <!--Botó Perfil-->
+                <li>
+                    <a href="../html/personal.html" class="sidebar_element">
+                        <i class="fa-regular fa-user"></i>
+
+                        <div class="sidebar_hide">
+                            <p class="sidebar_title">Paula Margarit</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <main>
+            <!--Primer article: títol, descripció i imatge-->
+            <article class="article_inici">
+                <div class="inici_descripcio">
+                    <h2>ITÀLIA</h2>
+                    <p>Viatge de 5 dies per descobrir Roma, Florència i altres ciutats italianes amb el grup. Visitarem llocs emblemàtics, restaurants típics i organitzarem diferents activitats durant el viatge.</p>
+                </div>
+                <img class="inici_imatge" src="../data/Italia.jpg" alt="Colosseu Roma">
+            </article>
+            <!--Segon article-->
+            <article class="article_participants">
+                <div class="article_participants_content">
+                    <!--Títol i botó per afegir participants-->
+                    <div class="titols">
+                        <h2>Participants</h2>
+                        <a class="button_titol">+ Afegir Participants</a>
+                    </div>
+                    <!--Participants: imatge, nom i icona-->
+                    <div class="total_participants">
+                        <div class="participant">
+                            <div class="participant_esquerra">
+                                <img src="../data/Perfil.jpg" alt="Imatge noia">
+                                <p>Paula Margarit</p>
+                            </div>
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+
+                        <div class="participant">
+                            <div class="participant_esquerra">
+                                <img src="../data/Perfil4.jpg" alt="Imatge noi">
+                                <p>Albert Martí</p>
+                            </div>
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+
+                        <div class="participant">
+                            <div class="participant_esquerra">
+                                <img src="../data/Perfil2.jpg" alt="Imatge noia">
+                                <p>Ingrid Moragas</p>
+                            </div>
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+
+                        <div class="participant">
+                            <div class="participant_esquerra">
+                                <img src="../data/Perfil3.jpg" alt="Imatge noia">
+                                <p>Carme Tobella</p>
+                            </div>
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+
+                        <div class="participant">
+                            <div class="participant_esquerra">
+                                <img src="../data/Perfil5.jpg" alt="Imatge noi">
+                                <p>Nil Grau</p>
+                            </div>
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </main>
+    </body>
+</html>

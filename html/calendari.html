@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ca">
+    <!--Establim el tipus de document, i els enllaços cap al full d'estil CSS i  JS-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="icon" href="../data/Icona_logo.jpg">
+        <title>Calendari</title>
+    </head>
+    <body class="body_aplicacio">
+        <!--Menú lateral-->
+        <aside class="sidebar">
+            <ul class="sidebar_list">
+                <!--Logo-->
+                <li class="sidebar_element">
+                    <img src="../data/Icona_logo.jpg" class="sidebar_icon sidebar_icon--logo">
+                    
+                    <div class="sidebar_hide">
+                        <img src="../data/Icona.png" class="sidebar_icon_text">
+                    </div>
+                </li>
+                <!--Botó home-->
+                <li>
+                    <a href="../html/inici_grup.html" class="sidebar_element"> 
+                        <i class="fa-solid fa-house"></i>
+                        
+                        <div class="sidebar_hide">
+                            <p class="sidebar_text">Home</p>
+                        </div>
+                    </a>
+                </li>
+                <!--Botó Fòrum-->
+                <li>
+                    <a href="../html/forum.html" class="sidebar_element">
+                        <i class="fa-regular fa-message"></i>
+                        
+                        <div class="sidebar_hide">
+                            <p class="sidebar_text">Fòrum</p>
+                        </div>
+                    </a>
+                </li>
+                <!--Botó Calendari-->
+                <li>
+                    <a href="../html/calendari.html" class="sidebar_element">
+                        <i class="fa-regular fa-calendar"></i>
+                        
+                        <div class="sidebar_hide">
+                            <p class="sidebar_text">Calendari</p>
+                        </div>
+                    </a>
+                </li>
+                <!--Botó Votacions-->
+                <li>
+                    <a href="../html/votacions.html" class="sidebar_element">
+                        <i class="fa-regular fa-square-check"></i>
+                        
+                        <div class="sidebar_hide">
+                            <p class="sidebar_text">Votacions</p>
+                        </div>
+                    </a>
+                </li>
+                <!--Botó Diners-->
+                <li>
+                    <a href="../html/diners.html" class="sidebar_element">
+                        <i class="fa-regular fa-dollar-sign"></i>
+                        
+                        <div class="sidebar_hide">
+                            <p class="sidebar_text">Diners</p>
+                        </div>
+                    </a>
+                </li>
+                <!--Botó Configuració-->
+                <li class="sidebar_bottom">
+                    <a href="../html/gestio_grups.html" class="sidebar_element">
+                        <i class="fa-solid fa-gear"></i>
+
+                        <div class="sidebar_hide">
+                            <p class="sidebar_title">Configuració</p>
+                        </div>
+                    </a>
+                </li>
+                <!--Botó Perfil-->
+                <li>
+                    <a href="../html/personal.html" class="sidebar_element">
+                        <i class="fa-regular fa-user"></i>
+
+                        <div class="sidebar_hide">
+                            <p class="sidebar_title">Paula Margarit</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <main>
+            <!--Article principal-->
+            <article class="article_forum">
+                <!--Títol i botó per afegir esdeveniments-->
+                <div class="titols">
+                    <h2>Calendari</h2>
+                    <a class="button_titol">+ Afegir esdeveniment</a>
+                </div>
+                <!--Calendari-->
+                <div class="calendari_contingut">
+                    <!--Columna esquerra-->
+                    <div class="calendari_esquerra">
+                        <h3>Propers esdeveniments</h3>
+                        <div>
+                            <h4>22 de maig</h2>
+                            <p>Sortida des de l’aeroport de Barcelona cap a Roma. Recordeu arribar amb temps per fer el check-in.</p>
+                        </div>
+                        <div>
+                            <h4>24 de maig</h2>
+                            <p>Reserva per sopar tots junts en un restaurant italià prop del centre de Roma.</p>
+                        </div>
+                    </div>
+                    <!--Columna dreta-->
+                    <div class="calendari_dret">
+                        <!--Part superior amb el mes i navegació-->
+                        <div class="calendari_data">
+                            <p>Maig 2026</p>
+                            <div>
+                                <i class="fa-solid fa-chevron-left"></i>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                        </div>
+                        <!--Dies de la setmana-->
+                        <div class="calendari_setmana">
+                            <p>Dl</p>
+                            <p>Dt</p>
+                            <p>Dc</p>
+                            <p>Dj</p>
+                            <p>Dv</p>
+                            <p>Ds</p>
+                            <p>Dg</p>
+                        </div>
+                        <!--Contenidor on JavaScript generarà els dies-->
+                        <div>
+                            <div class="calendari_total_dies"></div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </main>
+        <!--Enllaç al fitxer JavaScript-->
+        <script src="../js/script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ca">
+    <!--Establim el tipus de document, i els enllaços cap al full d'estil CSS i  JS-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="icon" href="../data/Icona_logo.jpg">
+        <title>Diners</title>
+    </head>
+    <body class="body_aplicacio">
+        <!--Menú lateral-->
+        <aside class="sidebar">
+            <ul class="sidebar_list">
+                <!--Logo-->
+                <li class="sidebar_element">
+                    <img src="../data/Icona_logo.jpg" class="sidebar_icon sidebar_icon--logo">
+                    
+                    <div class="sidebar_hide">
+                        <img src="../data/Icona.png" class="sidebar_icon_text">
+                    </div>
+                </li>
+                <!--Botó home-->
+                <li>
+                    <a href="../html/inici_grup.html" class="sidebar_element"> 
+                        <i class="fa-solid fa-house"></i>
+                        
+                        <div class="sidebar_hide">
+                            <p class="sidebar_text">Home</p>
+                        </div>
+                    </a>
+                </li>
+                <!--Botó Fòrum-->
+                <li>
+                    <a href="../html/forum.html" class="sidebar_element">
+                        <i class="fa-regular fa-message"></i>
+                        
+                        <div class="sidebar_hide">
+                            <p class="sidebar_text">Fòrum</p>
+                        </div>
+                    </a>
+                </li>
+                <!--Botó Calendari-->
+                <li>
+                    <a href="../html/calendari.html" class="sidebar_element">
+                        <i class="fa-regular fa-calendar"></i>
+                        
+                        <div class="sidebar_hide">
+                            <p class="sidebar_text">Calendari</p>
+                        </div>
+                    </a>
+                </li>
+                <!--Botó Votacions-->
+                <li>
+                    <a href="../html/votacions.html" class="sidebar_element">
+                        <i class="fa-regular fa-square-check"></i>
+                        
+                        <div class="sidebar_hide">
+                            <p class="sidebar_text">Votacions</p>
+                        </div>
+                    </a>
+                </li>
+                <!--Botó Diners-->
+                <li>
+                    <a href="../html/diners.html" class="sidebar_element">
+                        <i class="fa-regular fa-dollar-sign"></i>
+                        
+                        <div class="sidebar_hide">
+                            <p class="sidebar_text">Diners</p>
+                        </div>
+                    </a>
+                </li>
+                <!--Botó Configuració-->
+                <li class="sidebar_bottom">
+                    <a href="../html/gestio_grups.html" class="sidebar_element">
+                        <i class="fa-solid fa-gear"></i>
+
+                        <div class="sidebar_hide">
+                            <p class="sidebar_title">Configuració</p>
+                        </div>
+                    </a>
+                </li>
+                <!--Botó Perfil-->
+                <li>
+                    <a href="../html/personal.html" class="sidebar_element">
+                        <i class="fa-regular fa-user"></i>
+
+                        <div class="sidebar_hide">
+                            <p class="sidebar_title">Paula Margarit</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <main>
+            <!--Part superior: total diners amb botons per ingressar o retirar-->
+            <article class="article_diners">
+                <p>Diners totals</p>
+                <h1>300€</h1>
+
+                <div>
+                    <a class="button_titol"><i class="fa-solid fa-arrow-trend-up"></i> Ingressar</a>
+                    <a class="button_titol"><i class="fa-solid fa-arrow-trend-down"></i> Retirar</a>
+                </div>
+            </article>
+            <!--Part inferior-->
+            <article class="article_participants">
+                <!--Columna esquerra per veure els ingressos-->
+                <div class="article_participants_content">
+                    <div class="titols">
+                        <h2>Ingressos</h2>
+                    </div>
+                    <div class="diners_persona">
+                        <p>Ingrid Moragas</p>
+                        <p>+50€</p>
+                    </div>
+                    <div class="diners_persona">
+                        <p>Nil Grau</p>
+                        <p>+15€</p>
+                    </div>
+                    <div class="diners_persona">
+                        <p>Carme Tobella</p>
+                        <p>+40€</p>
+                    </div>
+                    <div class="diners_persona">
+                        <p>Albert Martí</p>
+                        <p>+20€</p>
+                    </div>
+                </div>
+                <!--Columna dreta per veure les despeses-->
+                <div class="article_participants_content">
+                    <div class="titols">
+                        <h2>Despeses</h2>
+                    </div>
+                    <div class="diners_persona">
+                        <p>Paula Margarit</p>
+                        <p>-20€</p>
+                    </div>
+                    <div class="diners_persona">
+                        <p>Ingrid Moragas</p>
+                        <p>-25€</p>
+                    </div>
+                    <div class="diners_persona">
+                        <p>Albert Martí</p>
+                        <p>-5€</p>
+                    </div>
+                    <div class="diners_persona">
+                        <p>Carme Margarit</p>
+                        <p>-15€</p>
+                    </div>
+                </div>
+            </article>
+        </main>
+    </body>
+</html>
